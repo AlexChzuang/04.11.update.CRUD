@@ -1,0 +1,7 @@
+<%= simple_form_for(@movie) do |f| %>
+  <%= f.input :name, label: "電影名稱" %>
+  <%= f.input :year, label: "上映年份" %>
+  <%= f.input :issued, label: "發行公司" %>
+  <%= f.input :comments, label: "影評" %>
+  <%= f.submit %>
+<% end %>
