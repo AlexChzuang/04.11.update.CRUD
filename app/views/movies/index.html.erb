@@ -42,7 +42,7 @@
       <% @movies.each do |movie| %>
       <tr>
         <td><%= link_to "選起來", vote_movie_path(movie), method: "post", data: { confirm: "確定投下去？"}, class:"btn btn-danger btn-xs" %></td>
-        <td><%= movie.name %></td>
+        <td><%= link_to movie.name, movie_path(movie.id) %></td>
         <td><%= movie.issued %> ( 上映年份：<%= movie.year %> 年)</td>
         <td><%= movie.comments %></td>
         <td><%= movie.vote_logs.size %></td>
