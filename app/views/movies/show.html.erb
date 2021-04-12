@@ -1,0 +1,14 @@
+<% if @movie %>
+  <h1><%= @movie.name %></h1>
+
+  <ul>
+    <li>上映年份: <%= @movie.year %></li>
+    <li>發行公司: <%= @movie.issued %></li>
+    <li>影評: <%= @movie.comments %></li>
+  </ul>
+
+<% else %>
+
+  <h1>沒有資料喔！</h1>
+
+<% end %>
